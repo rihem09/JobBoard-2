@@ -18,8 +18,21 @@ public class GatewayApplication {
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route("candidat",
-                        r->r.path("/candidats/**")
+                        r->r.path("/mic1/**")
                         .uri("lb://candidat")).
+                route("job",
+                        r->r.path("/mic2/**")
+                        .uri("lb://job")).
+                route("candidature",
+                        r->r.path("/mic3/**")
+                                .uri("lb://candidature")).
+                route("meeting",
+                        r->r.path("/mic4/**")
+                                .uri("lb://meeting")).
+                route("notification",
+                        r->r.path("/mic5/**")
+                                .uri("lb://notification")).
+
                 build();
      }
 
