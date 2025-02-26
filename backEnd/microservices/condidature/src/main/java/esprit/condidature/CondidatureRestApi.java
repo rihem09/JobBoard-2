@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/mic3/condidature")
+@RequestMapping("/mic3/condidatures")
 public class CondidatureRestApi {
 
     @GetMapping("/hello")
     public String hello() {
-        return "Hello World";
+        return "hello I'm Microservice Condidature";
     }
 }

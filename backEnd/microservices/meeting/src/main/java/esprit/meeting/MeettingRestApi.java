@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/mic4/meetings")
 public class MeettingRestApi {
 
-    @GetMapping
+    @GetMapping("/hello")
     public String hello() {
-        return "Hello World";
+        return "Hello World: Microservice Meeting";
     }
 }

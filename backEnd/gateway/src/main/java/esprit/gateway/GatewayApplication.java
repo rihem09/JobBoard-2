@@ -14,26 +14,26 @@ public class GatewayApplication {
     public static void main(String[] args) {
         SpringApplication.run(GatewayApplication.class, args);
     }
+
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route("candidat",
                         r->r.path("/mic1/**")
-                        .uri("lb://candidat")).
-                route("job",
+                                .uri("lb://candidat"))
+                .route("job",
                         r->r.path("/mic2/**")
-                        .uri("lb://job")).
-                route("candidature",
+                                .uri("lb://job"))
+                .route("condidature",
                         r->r.path("/mic3/**")
-                                .uri("lb://candidature")).
-                route("meeting",
+                                .uri("lb://condidature"))
+                .route("meeting",
                         r->r.path("/mic4/**")
-                                .uri("lb://meeting")).
-                route("notification",
+                                .uri("lb://meeting"))
+                .route("notification",
                         r->r.path("/mic5/**")
-                                .uri("lb://notification")).
+                                .uri("lb://notification"))
 
-                build();
-     }
-
+                .build();
+    }
 }
