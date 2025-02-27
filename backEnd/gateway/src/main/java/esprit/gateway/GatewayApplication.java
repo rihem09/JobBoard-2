@@ -24,6 +24,7 @@ public class GatewayApplication {
                 .route("job",
                         r->r.path("/mic2/**")
                                 .uri("lb://job"))
+
                 .route("condidature",
                         r->r.path("/mic3/**")
                                 .uri("lb://condidature"))
@@ -37,3 +38,5 @@ public class GatewayApplication {
                 .build();
     }
 }
+
+

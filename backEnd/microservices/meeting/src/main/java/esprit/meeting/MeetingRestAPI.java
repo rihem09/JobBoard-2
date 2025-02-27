@@ -1,16 +1,17 @@
-package esprit.condidature;
+package esprit.meeting;
+
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@RequestMapping("/mic4/meeting")
 @RestController
-@RequestMapping("/mic3/condidatures")
-public class CondidatureRestApi {
+public class MeetingRestAPI {
 
     @GetMapping("/hello")
-    public String hello() {
-        return "Hello micriservice3 : condidatures";
+    public String sayHello() {
 
+        return "Hello Microservice 4 !";
     }
 }
