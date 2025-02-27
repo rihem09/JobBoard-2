@@ -18,6 +18,8 @@ public class CandidatRestApi {
     public String sayHello() {
         return "Hello I'm Microservice Candidat";
     }
+
+
     @Autowired
     private CandidatService candidatService;
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)

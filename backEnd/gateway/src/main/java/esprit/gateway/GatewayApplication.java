@@ -14,15 +14,17 @@ public class GatewayApplication {
     public static void main(String[] args) {
         SpringApplication.run(GatewayApplication.class, args);
     }
+
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route("candidat",
                         r->r.path("/mic1/**")
-                        .uri("lb://candidat"))
+                                .uri("lb://candidat"))
                 .route("job",
-                r->r.path("/mic2/**")
-                        .uri("lb://job"))
+                        r->r.path("/mic2/**")
+                                .uri("lb://job"))
+
                 .route("condidature",
                         r->r.path("/mic3/**")
                                 .uri("lb://condidature"))
@@ -34,7 +36,7 @@ public class GatewayApplication {
                                 .uri("lb://notification"))
 
                 .build();
-     }
-
-
+    }
 }
+
+

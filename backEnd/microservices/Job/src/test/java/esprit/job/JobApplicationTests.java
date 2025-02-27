@@ -1,14 +1,13 @@
-package esprit.notification;
+package esprit.job;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class NotificationApplicationTests {
+class JobApplicationTests {
 
 	@Test
 	void contextLoads() {
 	}
-
 
 }
