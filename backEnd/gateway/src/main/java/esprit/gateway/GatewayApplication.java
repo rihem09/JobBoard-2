@@ -21,9 +21,9 @@ public class GatewayApplication {
                 .route("candidat",
                         r->r.path("/mic1/**")
                                 .uri("lb://candidat"))
-                .route("job",
+                .route("Job",
                         r->r.path("/mic2/**")
-                                .uri("lb://job"))
+                                .uri("lb://Job"))
 
                 .route("condidature",
                         r->r.path("/mic3/**")
