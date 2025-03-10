@@ -26,8 +26,7 @@ Throughout the training, students will work with:
 
 ## 🚀 Learning Outcome
 By the end of this training, students will be able to **design, develop, and deploy scalable and secure microservices applications**, preparing them for real-world software architecture challenges.
-## 📢 Ressources Complémentaires
-- [projet microservice](https://github.com/ali-bouali/springboot-3-micro-service-demo)
+
 ---  
 ---  
 ## 🎓 Acknowledgment
