@@ -1,4 +1,4 @@
-package esprit.job;
+package com.esprit.microservice.meeting;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class JobApplication {
+public class MeetingApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(JobApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(MeetingApplication.class, args);
+    }
 
 }
