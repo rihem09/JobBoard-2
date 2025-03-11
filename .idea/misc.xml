@@ -8,9 +8,11 @@
         <option value="$PROJECT_DIR$/backEnd/gateway/pom.xml" />
         <option value="$PROJECT_DIR$/backEnd/microservices/candidat/pom.xml" />
         <option value="$PROJECT_DIR$/backEnd/microservices/Job/pom.xml" />
-        <option value="$PROJECT_DIR$/backEnd/microservices/condidature/pom.xml" />
         <option value="$PROJECT_DIR$/backEnd/microservices/meeting/pom.xml" />
         <option value="$PROJECT_DIR$/backEnd/microservices/notification/pom.xml" />
+        <option value="$PROJECT_DIR$/backEnd/microservices/ConfigServer/pom.xml" />
+        <option value="$PROJECT_DIR$/backEnd/microservices/condidature/pom.xml" />
+        <option value="$PROJECT_DIR$/backEnd/ConfigServer/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
