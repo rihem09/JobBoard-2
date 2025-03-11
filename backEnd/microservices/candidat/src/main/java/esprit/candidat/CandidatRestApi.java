@@ -19,6 +19,8 @@ public class CandidatRestApi {
 
 
 
+
+
     @Value("${welcome.message}")
     private String welcomeMessage;
     //simple web service for testing
@@ -29,6 +31,13 @@ public class CandidatRestApi {
 
     @Autowired
     private CandidatService candidatService;
+
+    @RequestMapping("/helloJobs")
+    public String sayHelloJob(){
+        return candidatService.sayHelloJob();
+    }
+
+
 
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List <Candidat>> listCandidat(){
