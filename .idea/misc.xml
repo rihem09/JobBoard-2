@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
@@ -11,6 +12,12 @@
         <option value="$PROJECT_DIR$/backEnd/microservices/meeting/pom.xml" />
         <option value="$PROJECT_DIR$/backEnd/microservices/notification/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/backEnd/microservices/condidature/pom.xml" />
+        <option value="$PROJECT_DIR$/backEnd/microservices/meeting/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="17 (2)" project-jdk-type="JavaSDK">
