@@ -16,18 +16,29 @@ import java.util.List;
 @RequestMapping("mic1/candidats")
 @RefreshScope
 public class CandidatRestApi {
+
+
+
+
+
     @Value("${welcome.message}")
-    private String message;
+    private String welcomeMessage;
     //simple web service for testing
     @GetMapping("/hello")
     public String sayHello() {
-
-        return message;
+        return welcomeMessage;
     }
-
 
     @Autowired
     private CandidatService candidatService;
+
+    @RequestMapping("/helloJobs")
+    public String sayHelloJob(){
+        return candidatService.sayHelloJob();
+    }
+
+
+
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List <Candidat>> listCandidat(){
         return new ResponseEntity<>(candidatService.findAll(),
