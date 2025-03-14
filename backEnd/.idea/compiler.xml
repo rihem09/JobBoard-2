@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="notification" />
+        <module name="config-server" />
         <module name="eureka" />
         <module name="candidat" />
         <module name="Job" />
@@ -16,7 +17,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="config-server" target="17" />
       <module name="job" target="17" />
     </bytecodeTargetLevel>
   </component>

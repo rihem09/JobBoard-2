@@ -17,10 +17,6 @@ import java.util.List;
 @RefreshScope
 public class CandidatRestApi {
 
-
-
-
-
     @Value("${welcome.message}")
     private String welcomeMessage;
     //simple web service for testing
@@ -28,9 +24,9 @@ public class CandidatRestApi {
     public String sayHello() {
         return welcomeMessage;
     }
-
     @Autowired
     private CandidatService candidatService;
+
 
     @RequestMapping("/helloJobs")
     public String sayHelloJob(){
